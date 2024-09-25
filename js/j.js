@@ -23,7 +23,6 @@ async function getSongs(folder) {
     // let a = await fetch(`/songs/${folder}/info.json`).catch(err => console.error("Failed to fetch info.json:", err));
 
     let a = await fetch(`/${folder}/`)
-    console.log(folder)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
